@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+}
+
+
+/*footer e header iguais em todas as paginas.*/
+@font-face{
+    font-family: "trade-gothic";
+    src: url(fontes\trade-gothic-lt-std-58a78e64434a9.otf) format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+:root{
+            /*CORES*/
+    --cor-pricipal:#663399;/* usada no text-alert, diferenciais, welove(ver produtos) jaquetas(comprar), blusa(comprar),footer, instagram*/
+    --cor-fundo-bp:#fff;/*cor de fundo do baner principal index, cor da letra text-alert, footer*/
+    --cor-fundo-ns:#f9f9f9;/*cor do fundo novidades da semana, inverno 2024*, outlet, instagram*/
+    --cor-fundo-we:#e2e2e2;/*cor do fundo we love*/
+
+            /*FONTES*/
+    --fonte-ta: "trade-gothic", sans-serif;      
+            
+
+
+}
+
+
+#text-alert{
+    background-color:var(--cor-pricipal);
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+
+}
+
+
+#text-alert>p{
+    color: var(--cor-fundo-bp);
+    width: 577px;
+    height: 21px;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    margin: auto;
+    font-family: var(--fonte-ta);
+}
+
+header a:link{
+    text-decoration: none;
+}
+
+
+header a:visited{
+    text-decoration: none;
+}
+
+
+header a:hover{
+    text-decoration: none;
+}
+
+
+header a:active{
+    text-decoration: none;
+}
+
+
+header{
+    width: 100%;
+    height: 112px;
+    background-color: var(--cor-fundo-bp);
+    display: flex;
+    align-items: center;
+}
+
+
+header ul{
+    list-style-type: none;
+    
+}
+
+
+header li{
+    display: inline;
+}
+
+
+header input{
+    height: 50px;
+}
