@@ -5,6 +5,7 @@
     padding: 0;
     width: 100%;
     height: 100%
+    box-sizing: border-box;
 }
 
 
@@ -20,7 +21,7 @@
 :root{
             /*CORES*/
     --cor-pricipal:#663399;/* usada no text-alert, diferenciais, welove(ver produtos) jaquetas(comprar), blusa(comprar),footer, instagram*/
-    --cor-fundo-bp:#fff;/*cor de fundo do baner principal index, cor da letra text-alert, footer*/
+    --cor-fundo-bp:#E5E5E5;/*cor de fundo do baner principal index, cor da letra text-alert, footer*/
     --cor-fundo-ns:#f9f9f9;/*cor do fundo novidades da semana, inverno 2024*, outlet, instagram*/
     --cor-fundo-we:#e2e2e2;/*cor do fundo we love*/
 
@@ -31,7 +32,7 @@
 
 }
 
-
+/*mensagem no topo da pagina - text alert*/
 #text-alert{
     background-color:var(--cor-pricipal);
     display: flex;
@@ -53,7 +54,7 @@
     font-family: var(--fonte-ta);
 }
 
-
+/* todos LINK, VISITED, HOVER, ACTIVE...*/
 header a:link{
     text-decoration: none;
 }
@@ -73,46 +74,108 @@ header a:active{
     text-decoration: none;
 }
 
+/*header:
+separado em 3 partes:
+1- configurar header
+2- logo
+3- nav-bar
+4- search-icon + search-bar
+5- perfil-icon + shopping-bar-icon.
+*/
 
+/*1- configurar header*/
 header{
-    height: 10%;
+    height: 100px;
+    width: 100%;
     background-color: var(--cor-fundo-bp);
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 
-header ul{
-    list-style-type: none;
+/*2- logo*/
+#logo{
+    width: 500px;
+    margin-left: 20px;
+}
+
+
+/*3- nav-bar*/
+#nav-bar{
+    justify-content: center;
+    text-align: center;
     
 }
 
 
 header li{
-    display: inline;
-}
-
-header input{
-    height: 20px;
-    border: none;    
+   list-style-type: none; 
+   display: inline;
+   margin: 0px 30px; 
 }
 
 
+header li a{
+    font-weight: bold;
+    font-family: var(--fonte-ta); 
+    color: black;
+    
+}
+
+
+#outlet-color{
+    color: var(--cor-pricipal);
+}
+
+
+/*4- search-icon + search-bar */
 #search-bar{
     display: flex;
-    justify-content: center;
     align-items: center;
     border-bottom: 1px solid black;
+    margin-right: 30px;
+    max-width: 200px;  
 }
 
 
-.search-icon, button{
-    width: 10%;
-    height:10%;
-    background-color:#fff ;
+.search-img{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: var(--cor-fundo-bp); 
+}
+
+
+#search{
+    background-color: var(--cor-fundo-bp);
     border: none;
 
+}
 
-} 
+
+
+/*5- perfil-icon + shopping-bar-icon.*/
+.button{
+   width: 30px;
+   height: 30px;
+}
+
+
+#login-btn,
+#shopping-bag-btn{
+    width: 35px;
+    height: 34px;
+    margin: 0px 30px 0px 10px;
+    border: none;
+    background-color: var(--cor-fundo-bp);
+}
+
+/*NOTA--- Fica faltando algumas configurações mais "detalhistas"(LINK, VISITED, HOVER, ACTIVE) e configurações de responsividade*/
+
+/*BANNER PRINCIPAL--- carrocel de foto com link, temos algumas opções. o link pode estar na foto(clicando em qualquer lugar da foto ja seria redirecionado), o link pode estar na escrita da foto( fazendo com que o toque deva ser especifico no local dificultando para aparelhos menores.
+
+1-carrocel
+*/
 
 
